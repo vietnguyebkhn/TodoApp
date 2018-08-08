@@ -10,8 +10,19 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var mInput: UITextField!
+    
+   
+    @IBAction func mAddItemButton(_ sender: UIButton) {
+        if (mInput.text != ""){
+            list.append(mInput.text!)
+            mInput.text = ""
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

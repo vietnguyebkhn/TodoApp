@@ -15,6 +15,9 @@
 		A8506F84211AADEF0017529C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8506F82211AADEF0017529C /* LaunchScreen.storyboard */; };
 		A8506F8F211AADEF0017529C /* TodoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8506F8E211AADEF0017529C /* TodoAppTests.swift */; };
 		A8506F9A211AADEF0017529C /* TodoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8506F99211AADEF0017529C /* TodoAppUITests.swift */; };
+		A8506FA9211AAFCC0017529C /* CornerStoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8506FA8211AAFCC0017529C /* CornerStoryBoard.swift */; };
+		A8506FAD211AB0270017529C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8506FAC211AB0270017529C /* Login.swift */; };
+		A8506FB0211AB8630017529C /* HiddenKeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8506FAF211AB8630017529C /* HiddenKeyBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		A8506F95211AADEF0017529C /* TodoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8506F99211AADEF0017529C /* TodoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAppUITests.swift; sourceTree = "<group>"; };
 		A8506F9B211AADEF0017529C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8506FA8211AAFCC0017529C /* CornerStoryBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerStoryBoard.swift; sourceTree = "<group>"; };
+		A8506FAC211AB0270017529C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A8506FAF211AB8630017529C /* HiddenKeyBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenKeyBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		A8506F6B211AADE70017529C = {
 			isa = PBXGroup;
 			children = (
+				A8506FAE211AB8520017529C /* HiddenKeyBoard */,
+				A8506FA7211AAFBC0017529C /* CornerStoryBoard */,
 				A8506F76211AADE70017529C /* TodoApp */,
 				A8506F8D211AADEF0017529C /* TodoAppTests */,
 				A8506F98211AADEF0017529C /* TodoAppUITests */,
@@ -106,6 +114,7 @@
 				A8506F80211AADEF0017529C /* Assets.xcassets */,
 				A8506F82211AADEF0017529C /* LaunchScreen.storyboard */,
 				A8506F85211AADEF0017529C /* Info.plist */,
+				A8506FAC211AB0270017529C /* Login.swift */,
 			);
 			path = TodoApp;
 			sourceTree = "<group>";
@@ -126,6 +135,22 @@
 				A8506F9B211AADEF0017529C /* Info.plist */,
 			);
 			path = TodoAppUITests;
+			sourceTree = "<group>";
+		};
+		A8506FA7211AAFBC0017529C /* CornerStoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A8506FA8211AAFCC0017529C /* CornerStoryBoard.swift */,
+			);
+			path = CornerStoryBoard;
+			sourceTree = "<group>";
+		};
+		A8506FAE211AB8520017529C /* HiddenKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				A8506FAF211AB8630017529C /* HiddenKeyBoard.swift */,
+			);
+			path = HiddenKeyBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8506FAD211AB0270017529C /* Login.swift in Sources */,
 				A8506F7C211AADE70017529C /* SecondViewController.swift in Sources */,
 				A8506F78211AADE70017529C /* AppDelegate.swift in Sources */,
 				A8506F7A211AADE70017529C /* FirstViewController.swift in Sources */,
+				A8506FB0211AB8630017529C /* HiddenKeyBoard.swift in Sources */,
+				A8506FA9211AAFCC0017529C /* CornerStoryBoard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,12 +463,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WA7JZCPK6Y;
 				INFOPLIST_FILE = TodoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ITSOL.TodoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ITSOL.TableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -452,12 +482,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WA7JZCPK6Y;
 				INFOPLIST_FILE = TodoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ITSOL.TodoApp;
+				PRODUCT_BUNDLE_IDENTIFIER = ITSOL.TableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
